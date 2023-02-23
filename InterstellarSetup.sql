@@ -23,11 +23,11 @@ CREATE TABLE [dbo].[EntityTypes](
 );
 CREATE TABLE [dbo].[Properties](
 	[PropertyID][int] IDENTITY(1,1) NOT NULL,
-	[Size][varchar](25) NULL,
+	[Size][float] NULL,
 	[EntityTypeID][int] NOT NULL,
-	[Mass][varchar](25) NULL,
+	[Mass][float] NULL,
 	[DistanceFromEarth][varchar](25) NULL,
-	[Temperature][int] NULL,
+	[Temperature][float] NULL,
 	CONSTRAINT [PK_Properties] PRIMARY KEY CLUSTERED 
 	(
 		[PropertyID] ASC
