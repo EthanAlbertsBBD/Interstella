@@ -1,3 +1,6 @@
+USE InterstellarDB
+GO
+
 CREATE VIEW vUsers
 AS
 SELECT Username,
@@ -5,7 +8,7 @@ CharacterName
 FROM Users
 GO
 
-CREATE VIEW vComsicEntities
+CREATE VIEW vCosmicEntities
 AS
 SELECT CosmicEntities.EntityID,
 CosmicEntities.Name,
