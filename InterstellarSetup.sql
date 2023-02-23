@@ -6,7 +6,7 @@ USE InterstellarDB;
 CREATE TABLE [dbo].[Customizations](
 	[CustomizationID][int] IDENTITY(1,1) NOT NULL,
 	[Model][int] NOT NULL,
-	[Colour][varchar](20) NOT NULL,
+	[Colour][int](20) NOT NULL,
 	CONSTRAINT [PK_Customizations] PRIMARY KEY CLUSTERED 
 	(
 		[CustomizationID] ASC
