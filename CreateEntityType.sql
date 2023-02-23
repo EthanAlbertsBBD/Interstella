@@ -3,10 +3,10 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-DROP PROCEDURE IF EXISTS [dbo].[createEntityType];
+DROP PROCEDURE IF EXISTS [dbo].[uspCreateEntityType];
 GO
 
-CREATE PROCEDURE [dbo].[createEntityType]
+CREATE PROCEDURE [dbo].[uspCreateEntityType]
 	@Type VARCHAR(20),
 	@Description VARCHAR(MAX)
 AS
