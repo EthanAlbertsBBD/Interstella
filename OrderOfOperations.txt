@@ -1,0 +1,10 @@
+InterstellarSetup
+CreateCosmicEntityWithProps
+CreateEntityType
+InterstellarViewsSetup
+InterstellarUserFunctionsSetUp
+InsertCustomandEntityType
+InsertEntitiesAndPropsP1
+InsertPlanetaryBodies
+InsertSatellites
+Create a user
