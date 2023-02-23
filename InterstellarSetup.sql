@@ -37,7 +37,7 @@ CREATE TABLE [dbo].[Properties](
 CREATE TABLE [dbo].[CosmicEntities](
 	[EntityID][int] IDENTITY(1,1) NOT NULL,
 	[Name][varchar](25) NOT NULL,
-	[SuperEntityID][int] NULL,
+	[SuperEntityID][int] NOT NULL,
 	[DetailDescription][varchar](MAX) NULL,
 	CONSTRAINT [PK_CosmicEntities] PRIMARY KEY CLUSTERED 
 	(
