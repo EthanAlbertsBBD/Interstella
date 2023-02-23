@@ -3,10 +3,10 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-DROP PROCEDURE IF EXISTS [dbo].[createCosmicEntityWithProps];
+DROP PROCEDURE IF EXISTS [dbo].[uspCreateCosmicEntityWithProps];
 GO
 
-CREATE PROCEDURE [dbo].[createCosmicEntityWithProps]
+CREATE PROCEDURE [dbo].[uspCreateCosmicEntityWithProps]
 	@Name VARCHAR(25),
 	@SuperEntityID int,
 	@DetailDescription VARCHAR(MAX),
