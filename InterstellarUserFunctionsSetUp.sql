@@ -5,7 +5,7 @@ RETURNS table AS
 
 GO
 
-CREATE FUNCTION dbo.udfGetUser(@Username varchar)
+CREATE FUNCTION dbo.udfGetUser(@Username varchar(25))
 RETURNS table AS
 	RETURN (SELECT CharacterName,
 	CurrentEntity,
@@ -13,7 +13,7 @@ RETURNS table AS
 	WHERE Username = @Username)
 GO
 
-CREATE FUNCTION dbo.udfGetUserCurrentEntity(@EntityID varchar)
+CREATE FUNCTION dbo.udfGetUserCurrentEntity(@EntityID int)
 RETURNS table AS
 	RETURN (SELECT CosmicEntities.EntityID,
 	CosmicEntities.Name,
@@ -23,7 +23,7 @@ RETURNS table AS
 	Properties.Mass,
 	Properties.Temperature,
 	Properties.DistanceFromEarth,
-	Properties.EntityTypeID
+	EntityTypes.Type
 	FROM CosmicEntities
 	INNER JOIN (Properties
 		INNER JOIN EntityTypes
